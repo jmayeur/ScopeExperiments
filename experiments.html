@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Scope Experiments</title>
+    <link type="text/css" href="experiments.css" rel="stylesheet">
+    <link type="text/css" href="prism.css" rel="stylesheet">
+
+
+</head>
+<body>
+<template id="valueAssignmentTemplate">
+    <div class="outBox">
+        <h2></h2>
+        <blockquote>
+            <pre>
+                <code class="language-javascript"></code>
+            </pre>
+        </blockquote>
+        <h4>OUT:</h4>
+        <blockquote>
+            <table class="outBlock">
+                <thead>
+                <td>Param Name</td>
+                <td>State</td>
+                <td>Direct Value</td>
+                <td>window Value</td>
+                </thead>
+            </table>
+        </blockquote>
+        <script></script>
+    </div>
+</template>
+
+
+<script src="prism.js"></script>
+<script src="utils.js"></script>
+<script src="experiments.js"></script>
+<script>
+    blockBuilder.buildBlock('Un-var-ed global', experiments.basic);
+    blockBuilder.buildBlock('var scooped', experiments.basicWithVar);
+    blockBuilder.buildBlock('var scooped, accidental override', experiments.basicWithVarAccidentalOverride);
+    blockBuilder.buildBlock('var scooped, double declare', experiments.basicWithVarDoubleDeclaration);
+
+
+
+</script>
+</body>
+</html>

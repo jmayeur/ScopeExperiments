@@ -1,0 +1,46 @@
+table
+{
+    border-collapse:collapse;
+}
+table,th, td
+{
+    border: 1px solid black;
+}
+
+h4, h3, h2, h1 {
+    color: #f5f2f0;
+}
+
+.name{
+    color: chocolate;
+}
+.state{
+    color:darkslategray;
+}
+.value1{
+    color:blue;
+}
+
+.value2{
+    color:#0077aa;
+}
+
+.value3{
+    color:#00aa77;
+}
+
+.name, .state, .value {
+    padding: 5px;
+}
+
+.outBlock{
+    font-family: consolas, courier, monospace;
+    font-size: small;
+    background-color: #f5f2f0;
+}
+
+.outBox{
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 10px;
+}
